@@ -1,0 +1,74 @@
+/** Stylus Styles */
+
+// Available variables https://github.com/vuetifyjs/vuetify/blob/master/src/stylus/settings/_variables.styl
+
+//$body-bg:= #333335
+//$color-root := #fff
+$footer-height := 'auto'
+$body-font-family := 'Open Sans',sans-serif
+$font-size-root := 14px
+$line-height-root := 1.5
+$color-pack := true
+
+/*
+$theme := {
+  primary: $blue.darken-2
+  accent: $blue.accent-2
+  secondary: $grey.darken-3
+  info: $blue.base
+  warning: $amber.base
+  error: $red.base
+  success: $green.base
+}
+/**/
+
+@import '../../node_modules/vuetify/src/stylus/main'
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800&subset=cyrillic');
+
+body {
+
+}
+
+a {
+	color: inherit;
+}
+
+main {
+	//background: none;
+	padding-bottom:50px;
+}
+
+.content {
+	//background: none;
+}
+
+.toolbar {
+	/*background:#333335;*/
+}
+
+.footer {
+	position:fixed;
+	bottom:0;
+	width:100%;
+	text-align:center;
+	background:black;
+}
+
+	a {
+		font-size:11px;
+		font-weight:300;
+		text-decoration:none;
+		line-height:13px;
+		display:inline-block;
+		margin:0 5px;
+		cursor:pointer;
+	}
+
+
+.fade-enter-active, .fade-leave-active {
+	transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+	opacity: 0
+}
